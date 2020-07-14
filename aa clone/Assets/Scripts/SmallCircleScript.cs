@@ -26,6 +26,7 @@ public class SmallCircleScript : MonoBehaviour
     {
         if (collision.tag == "RotatingCircleTag")
         {
+            transform.SetParent(collision.transform);
             collisionControl = true;
         }
     }
