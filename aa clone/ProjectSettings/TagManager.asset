@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - RotatingCircleTag
+  - MainCircleTag
+  - SmallCircleTag
+  - GameOverTag
   layers:
   - Default
   - TransparentFX
