@@ -10,6 +10,10 @@ public class CheckGameOver : MonoBehaviour
     GameObject mainCircle;
     public Animator animator;
     public Text rotatingCircleLevel;
+    public Text firstMainCircle;
+    public Text secondMainCircle;
+    public Text thirdMainCircle;
+
     void Start()
     {
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
