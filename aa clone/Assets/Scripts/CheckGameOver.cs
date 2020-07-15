@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckGameOver : MonoBehaviour
 {
@@ -16,8 +17,20 @@ public class CheckGameOver : MonoBehaviour
 
     public void GameOver()
     {
+        StartCoroutine(GameOverEnumerator());
+        // We need to wait a second to see the animation
+
+        // TODO: Don't go to main menu on game over. Display a "restart" or "try again" button and "return to main menu" button.
+    }
+
+    IEnumerator GameOverEnumerator()
+    {
         rotatingCircle.GetComponent<Rotate>().enabled = false;
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
         animator.SetTrigger("GameOverTrigger");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene("MainMenu");
     }
 }
