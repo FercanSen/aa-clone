@@ -6,6 +6,8 @@ public class CheckGameOver : MonoBehaviour
 {
     GameObject rotatingCircle;
     GameObject mainCircle;
+    public Animator animator;
+
     void Start()
     {
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
@@ -16,5 +18,6 @@ public class CheckGameOver : MonoBehaviour
     {
         rotatingCircle.GetComponent<Rotate>().enabled = false;
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
+        animator.SetTrigger("GameOverTrigger");
     }
 }
