@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CheckGameOver : MonoBehaviour
 {
     GameObject rotatingCircle;
     GameObject mainCircle;
     public Animator animator;
-
+    public Text rotatingCircleLevel;
     void Start()
     {
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
         mainCircle = GameObject.FindGameObjectWithTag("MainCircleTag");
+        rotatingCircleLevel.text = SceneManager.GetActiveScene().name;
     }
 
     public void GameOver()
