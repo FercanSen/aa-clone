@@ -9,16 +9,35 @@ public class CheckGameOver : MonoBehaviour
     GameObject rotatingCircle;
     GameObject mainCircle;
     public Animator animator;
-    public Text rotatingCircleLevel;
+    public Text currentLevel;
     public Text firstMainCircle;
     public Text secondMainCircle;
     public Text thirdMainCircle;
+    public int totalSmallCircleCount;
 
     void Start()
     {
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
         mainCircle = GameObject.FindGameObjectWithTag("MainCircleTag");
-        rotatingCircleLevel.text = SceneManager.GetActiveScene().name;
+        currentLevel.text = SceneManager.GetActiveScene().name;
+    }
+    void Update()
+    {
+        if (totalSmallCircleCount < 2)
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+        }
+        else if (totalSmallCircleCount < 3)
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = (totalSmallCircleCount - 1).ToString();
+        }
+        else
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = (totalSmallCircleCount - 1).ToString();
+            thirdMainCircle.text = (totalSmallCircleCount - 2).ToString();
+        }
     }
 
     public void GameOver()
