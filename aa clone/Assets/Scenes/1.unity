@@ -250,7 +250,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 1978190898}
   secondMainCircle: {fileID: 1562445579}
   thirdMainCircle: {fileID: 943839131}
-  totalSmallCircleCount: 8
+  totalSmallCircleCount: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
