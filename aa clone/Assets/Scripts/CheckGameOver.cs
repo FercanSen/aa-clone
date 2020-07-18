@@ -20,17 +20,44 @@ public class CheckGameOver : MonoBehaviour
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
         mainCircle = GameObject.FindGameObjectWithTag("MainCircleTag");
         currentLevel.text = SceneManager.GetActiveScene().name;
-    }
-    void Update()
-    {
+
         if (totalSmallCircleCount < 2)
         {
             firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = "";
+            thirdMainCircle.text = "";
         }
         else if (totalSmallCircleCount < 3)
         {
             firstMainCircle.text = totalSmallCircleCount.ToString();
             secondMainCircle.text = (totalSmallCircleCount - 1).ToString();
+            thirdMainCircle.text = "";
+        }
+        else
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = (totalSmallCircleCount - 1).ToString();
+            thirdMainCircle.text = (totalSmallCircleCount - 2).ToString();
+        }
+    }
+
+
+    public void ShowTextOnMainCircles()
+    {
+        Debug.Log("Button pressed");
+        totalSmallCircleCount--;
+
+        if (totalSmallCircleCount < 2)
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = "";
+            thirdMainCircle.text = "";
+        }
+        else if (totalSmallCircleCount < 3)
+        {
+            firstMainCircle.text = totalSmallCircleCount.ToString();
+            secondMainCircle.text = (totalSmallCircleCount - 1).ToString();
+            thirdMainCircle.text = "";
         }
         else
         {
@@ -42,6 +69,7 @@ public class CheckGameOver : MonoBehaviour
 
     public void GameOver()
     {
+        Debug.Log("Game Over");
         StartCoroutine(GameOverEnumerator());
         // We need to wait a second to see the animation
 

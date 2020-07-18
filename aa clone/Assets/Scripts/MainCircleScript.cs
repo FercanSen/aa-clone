@@ -5,21 +5,24 @@ using UnityEngine;
 public class MainCircleScript : MonoBehaviour
 {
     public GameObject smallCircle;
+    GameObject gameBrain;
     void Start()
     {
-
+        gameBrain = GameObject.FindGameObjectWithTag("GameOverTag");
     }
 
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            smallCircleSpawn();
+            SmallCircleSpawn();
         }
     }
 
-    void smallCircleSpawn()
+    void SmallCircleSpawn()
     {
         Instantiate(smallCircle, transform.position, transform.rotation);
+        gameBrain.GetComponent<CheckGameOver>().ShowTextOnMainCircles();
     }
+
 }
