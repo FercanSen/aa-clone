@@ -73,15 +73,13 @@ public class CheckGameOver : MonoBehaviour
 
     IEnumerator NewLevel()
     {
-        //rotatingCircle.GetComponent<Rotate>().enabled = false;
+        rotatingCircle.GetComponent<Rotate>().enabled = false;
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
 
         yield return new WaitForSeconds(1);
 
         if (control)
         {
-            animator.SetTrigger("NewLevelTrigger");
-            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(int.Parse(SceneManager.GetActiveScene().name) + 1);  // Go to next level by current level + 1.
         }
     }
