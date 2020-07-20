@@ -73,7 +73,6 @@ public class CheckGameOver : MonoBehaviour
 
     IEnumerator NewLevel()
     {
-        rotatingCircle.GetComponent<Rotate>().enabled = false;
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
 
         yield return new WaitForSeconds(1);
