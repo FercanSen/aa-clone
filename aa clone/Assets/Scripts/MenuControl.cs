@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuControl : MonoBehaviour
 {
+    int savedLevel = PlayerPrefs.GetInt("savedLevel");
+
     public void StartGame()
     {
-        SceneManager.LoadScene("1");
+        if (savedLevel == 0)
+        {
+            SceneManager.LoadScene(savedLevel + 1);
+        }
+        else
+        {
+            SceneManager.LoadScene(savedLevel + 1);
+        }
     }
 
     public void ExitGame()
