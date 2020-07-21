@@ -14,7 +14,7 @@ public class CheckGameOver : MonoBehaviour
     public Text secondMainCircle;
     public Text thirdMainCircle;
     public int totalSmallCircleCount;
-    bool control = true;
+    bool gameOverControl = false;
 
     void Start()
     {
@@ -75,10 +75,11 @@ public class CheckGameOver : MonoBehaviour
     {
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
 
-        yield return new WaitForSeconds(1);
-
-        if (control)
+        yield return new WaitForSeconds(1.5f);
+        if (!gameOverControl)
         {
+            animator.SetTrigger("NewLevelTrigger");
+            yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene(int.Parse(SceneManager.GetActiveScene().name) + 1);  // Go to next level by current level + 1.
         }
     }
@@ -94,7 +95,7 @@ public class CheckGameOver : MonoBehaviour
 
     IEnumerator GameOverEnumerator()
     {
-        control = false;
+        gameOverControl = true;
         rotatingCircle.GetComponent<Rotate>().enabled = false;
         mainCircle.GetComponent<MainCircleScript>().enabled = false;
         animator.SetTrigger("GameOverTrigger");
