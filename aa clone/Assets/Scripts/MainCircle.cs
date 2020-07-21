@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainCircleScript : MonoBehaviour
+public class MainCircle : MonoBehaviour
 {
     public GameObject smallCircle;
     GameObject gameBrain;

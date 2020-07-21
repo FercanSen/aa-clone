@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmallCircleScript : MonoBehaviour
+public class SmallCircle : MonoBehaviour
 {
     Rigidbody2D physics;
     public float speed;

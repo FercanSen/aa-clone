@@ -18,6 +18,8 @@ public class CheckGameOver : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("savedLevel", int.Parse(SceneManager.GetActiveScene().name)); // Save the current level to load later.
+
         rotatingCircle = GameObject.FindGameObjectWithTag("RotatingCircleTag");
         mainCircle = GameObject.FindGameObjectWithTag("MainCircleTag");
         currentLevel.text = SceneManager.GetActiveScene().name;
@@ -73,7 +75,7 @@ public class CheckGameOver : MonoBehaviour
 
     IEnumerator NewLevel()
     {
-        mainCircle.GetComponent<MainCircleScript>().enabled = false;
+        mainCircle.GetComponent<MainCircle>().enabled = false;
 
         yield return new WaitForSeconds(1.5f);
         if (!gameOverControl)
@@ -97,7 +99,7 @@ public class CheckGameOver : MonoBehaviour
     {
         gameOverControl = true;
         rotatingCircle.GetComponent<Rotate>().enabled = false;
-        mainCircle.GetComponent<MainCircleScript>().enabled = false;
+        mainCircle.GetComponent<MainCircle>().enabled = false;
         animator.SetTrigger("GameOverTrigger");
 
         yield return new WaitForSeconds(1);
