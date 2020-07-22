@@ -561,7 +561,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 620158036}
   secondMainCircle: {fileID: 62560425}
   thirdMainCircle: {fileID: 1200719019}
-  totalSmallCircleCount: 4
+  totalSmallCircleCount: 6
 --- !u!1 &1200719018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fdb97de2276f647b7bc3c24591cf69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 300
+  speed: 250
 --- !u!212 &1844649703
 SpriteRenderer:
   m_ObjectHideFlags: 0

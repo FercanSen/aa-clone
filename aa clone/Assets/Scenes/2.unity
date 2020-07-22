@@ -955,7 +955,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 1356562259}
   secondMainCircle: {fileID: 1670859992}
   thirdMainCircle: {fileID: 1413651383}
-  totalSmallCircleCount: 4
+  totalSmallCircleCount: 6
 --- !u!1 &2020242061
 GameObject:
   m_ObjectHideFlags: 0
