@@ -485,7 +485,7 @@ RectTransform:
   m_GameObject: {fileID: 1161609489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06}
-  m_LocalScale: {x: 0.019787587, y: 0.019787587, z: 0.019787587}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children: []
   m_Father: {fileID: 2114018576}
   m_RootOrder: 0
@@ -523,7 +523,7 @@ Transform:
   m_GameObject: {fileID: 1334869701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.12938643, y: 0.997087, z: 1.4462891}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children: []
   m_Father: {fileID: 928674443}
   m_RootOrder: 2
@@ -955,7 +955,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 1356562259}
   secondMainCircle: {fileID: 1670859992}
   thirdMainCircle: {fileID: 1413651383}
-  totalSmallCircleCount: 6
+  totalSmallCircleCount: 4
 --- !u!1 &2020242061
 GameObject:
   m_ObjectHideFlags: 0

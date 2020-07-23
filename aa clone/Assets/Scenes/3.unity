@@ -1052,7 +1052,7 @@ RectTransform:
   m_GameObject: {fileID: 1804317630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06}
-  m_LocalScale: {x: 0.019787587, y: 0.019787587, z: 0.019787587}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children: []
   m_Father: {fileID: 619843685}
   m_RootOrder: 0
@@ -1090,7 +1090,7 @@ Transform:
   m_GameObject: {fileID: 1844649699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.12938643, y: 0.997087, z: 1.4462891}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children: []
   m_Father: {fileID: 82387762}
   m_RootOrder: 2
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fdb97de2276f647b7bc3c24591cf69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  speed: 200
 --- !u!212 &1844649703
 SpriteRenderer:
   m_ObjectHideFlags: 0
