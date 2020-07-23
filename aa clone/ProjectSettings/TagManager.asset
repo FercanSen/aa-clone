@@ -8,6 +8,8 @@ TagManager:
   - MainCircleTag
   - SmallCircleTag
   - GameOverTag
+  - MainCircle1
+  - MainCircle2
   layers:
   - Default
   - TransparentFX

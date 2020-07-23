@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 318839533}
   m_Layer: 0
   m_Name: Main Circle Level 2
-  m_TagString: Untagged
+  m_TagString: MainCircle2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 1513906248}
   m_Layer: 0
   m_Name: Main Circle Level 1
-  m_TagString: Untagged
+  m_TagString: MainCircle1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

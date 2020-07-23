@@ -345,7 +345,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 1233144065}
   secondMainCircle: {fileID: 587273843}
   thirdMainCircle: {fileID: 1856813447}
-  totalSmallCircleCount: 4
+  totalSmallCircleCount: 6
 --- !u!1 &587273842
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 976675480}
   m_Layer: 0
   m_Name: Main Circle Level 1
-  m_TagString: Untagged
+  m_TagString: MainCircle1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 1615841753}
   m_Layer: 0
   m_Name: Main Circle Level 2
-  m_TagString: Untagged
+  m_TagString: MainCircle2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
