@@ -7,23 +7,16 @@ public class Rotate : MonoBehaviour
 {
     public float speed;
 
-    
-
-    // Update is called once per frame
     void Update()
     {
-
-        float angle = transform.localEulerAngles.z;
-        angle = (angle > 180) ? angle - 360 : angle;
-
-        if (int.Parse(SceneManager.GetActiveScene().name) <= 4)
+        if (int.Parse(SceneManager.GetActiveScene().name) <= 4 || (int.Parse(SceneManager.GetActiveScene().name) >= 7 && int.Parse(SceneManager.GetActiveScene().name) < 9))
         {
-            //Debug.Log("Level is less than or equal to four");
+            // Levels that are smaller than 4 and also level 7 and 8 rotates clockwise.
             transform.Rotate(0, 0, speed * Time.deltaTime);
         }
-        if (int.Parse(SceneManager.GetActiveScene().name) >= 5)
+        if ((int.Parse(SceneManager.GetActiveScene().name) >= 5 && int.Parse(SceneManager.GetActiveScene().name) < 7) || int.Parse(SceneManager.GetActiveScene().name) >= 9)
         {
-            //Debug.Log("Level is more than five.");
+            // Levels that are bigger than 5 and also level 8 and 9 rotates counter clockwise.
             transform.Rotate(0, 0, -speed * Time.deltaTime);
         }
     }
