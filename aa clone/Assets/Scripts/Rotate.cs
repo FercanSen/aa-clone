@@ -16,14 +16,14 @@ public class Rotate : MonoBehaviour
         float angle = transform.localEulerAngles.z;
         angle = (angle > 180) ? angle - 360 : angle;
 
-        if (int.Parse(SceneManager.GetActiveScene().name) < 5)
+        if (int.Parse(SceneManager.GetActiveScene().name) <= 4)
         {
-            //Debug.Log("Level is less than five.");
+            //Debug.Log("Level is less than or equal to four");
             transform.Rotate(0, 0, speed * Time.deltaTime);
         }
-        if (SceneManager.GetActiveScene().name == "5")
+        if (int.Parse(SceneManager.GetActiveScene().name) >= 5)
         {
-            //Debug.Log("Level is five.");
+            //Debug.Log("Level is more than five.");
             transform.Rotate(0, 0, -speed * Time.deltaTime);
         }
     }
