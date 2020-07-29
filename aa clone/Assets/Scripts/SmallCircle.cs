@@ -15,7 +15,6 @@ public class SmallCircle : MonoBehaviour
         gameOverObject = GameObject.FindGameObjectWithTag("GameOverTag");
     }
 
-
     void FixedUpdate()
     {
         if (!collisionControl)
