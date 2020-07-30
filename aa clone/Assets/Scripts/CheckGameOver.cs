@@ -99,7 +99,9 @@ public class CheckGameOver : MonoBehaviour
     {
         gameOverControl = true;
         rotatingCircle.GetComponent<Rotate>().enabled = false;
+        rotatingCircle.GetComponent<Scale>().enabled = false;
         mainCircle.GetComponent<MainCircle>().enabled = false;
+
         animator.SetTrigger("GameOverTrigger");
 
         yield return new WaitForSeconds(1);
