@@ -231,7 +231,7 @@ Transform:
   - {fileID: 2141337971}
   - {fileID: 574330017}
   m_Father: {fileID: 2081791296}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &560539212
 MonoBehaviour:
@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 748676184}
   - component: {fileID: 748676183}
   - component: {fileID: 748676182}
+  - component: {fileID: 748676185}
   m_Layer: 0
   m_Name: Rotating Circle
   m_TagString: RotatingCircleTag
@@ -405,11 +406,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748676180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0.1500001, y: 1, z: 1.5}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
-  m_Father: {fileID: 2081791296}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &748676182
 CircleCollider2D:
@@ -490,6 +491,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &748676185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748676180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd96ccbfbf2a230499d58748fa9dcee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &752990881
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +533,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2081791296}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &752990883
 MonoBehaviour:
@@ -819,7 +832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2081791296}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1358856062
 MonoBehaviour:
@@ -1086,7 +1099,6 @@ Transform:
   m_Children:
   - {fileID: 1376723309}
   - {fileID: 2080657228}
-  - {fileID: 748676181}
   - {fileID: 560539211}
   - {fileID: 752990882}
   - {fileID: 1358856061}
