@@ -8,13 +8,11 @@ public class SmallCircle : MonoBehaviour
     public float speed;
     bool collisionControl = false;
     GameObject gameOverObject;
-
     void Start()
     {
         physics = GetComponent<Rigidbody2D>();
         gameOverObject = GameObject.FindGameObjectWithTag("GameOverTag");
     }
-
     void FixedUpdate()
     {
         if (!collisionControl)
@@ -25,9 +23,13 @@ public class SmallCircle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Vector3 scale = gameOverObject.transform.localScale;
+
         if (collision.CompareTag("RotatingCircleTag"))
         {
             transform.SetParent(collision.transform);
+            //GameObject.FindGameObjectWithTag("SmallCircleTag").transform.parent = collision.transform;
+            //GameObject.FindGameObjectWithTag("SmallCircleTag").transform.localScale = scale;
             collisionControl = true;
         }
         if (collision.CompareTag("SmallCircleTag"))
