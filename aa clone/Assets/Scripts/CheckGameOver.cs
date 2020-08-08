@@ -99,6 +99,7 @@ public class CheckGameOver : MonoBehaviour
     {
         gameOverControl = true;
         rotatingCircle.GetComponent<Rotate>().enabled = false;
+        rotatingCircle.GetComponent<Rotate>().StopAllCoroutines();
         if (SceneManager.GetActiveScene().name == "7" || SceneManager.GetActiveScene().name == "8")
         {
             rotatingCircle.GetComponent<Scale>().enabled = false;
