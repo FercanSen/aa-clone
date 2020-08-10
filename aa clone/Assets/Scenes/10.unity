@@ -213,7 +213,6 @@ GameObject:
   - component: {fileID: 258864866}
   - component: {fileID: 258864870}
   - component: {fileID: 258864869}
-  - component: {fileID: 258864868}
   - component: {fileID: 258864867}
   m_Layer: 0
   m_Name: Rotating Circle
@@ -252,18 +251,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.09
---- !u!114 &258864868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258864865}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 408169dd6b8e232429a3aefa6698c79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &258864869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fdb97de2276f647b7bc3c24591cf69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 300
 --- !u!212 &258864870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -992,7 +979,7 @@ MonoBehaviour:
   firstMainCircle: {fileID: 364208572}
   secondMainCircle: {fileID: 1283283061}
   thirdMainCircle: {fileID: 576731729}
-  totalSmallCircleCount: 6
+  totalSmallCircleCount: 8
 --- !u!1 &1498492179
 GameObject:
   m_ObjectHideFlags: 0
